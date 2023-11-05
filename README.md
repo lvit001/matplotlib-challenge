@@ -32,4 +32,8 @@
 - Line Plot: Randomly decided to use mouse ID b128 (it was the first one in my data frame) and created a data frame that only contained data for that mouse ID. Set the x-axis equal to time points for b128's data frame and the y-axis equal to tumor volume for b128's data. Used pyplot to create the line plot
 - Scatter Plot: Created a new data frame that only looked at data for Capomulin. Grouped the data frame by mouse ID and then took the mean for both the tumor volume column and weight column by mouse ID. Set the x-axis as the mouse weight data and the y axis as the tumor volume data. Used pyplot to create a scatter plot with the data
 ### Correlation and Regression
-- 
+- Used the scipy pearsonr function to get the correlation coefficient for the mouse weight vs tumor volume data.
+- Used code from class to set slope, intercept, rvalue, pvalue, stderr values equal to the data retrieved from the scipy linregress function for the mouse weight vs tumor volume data.
+- Set a variable of regress_values equal to the function of a line (x_axis value * slope + y-intercept)
+- Set a variable of line_eq equal to printed code to be able to display the linear equation function
+- Finally, replotted the data as well as the regression line and annotated the linear equation over the chart
